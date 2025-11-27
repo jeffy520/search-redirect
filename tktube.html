@@ -1,0 +1,8 @@
+<html><script>
+let q=new URLSearchParams(location。search).get('q');
+if(q){
+  let letters=(q。match(/[a-zA-Z]+/)||[''])[0];
+  let numbers=(q。match(/\d+/)||[''])[0];
+  location.replace('https://tktube.com/zh/search/'+letters+'--'+numbers+'/');
+}
+</script></html>
